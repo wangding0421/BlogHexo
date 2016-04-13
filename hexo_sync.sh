@@ -1,3 +1,8 @@
+if [[ $# -eq 0 ]] ; then
+    echo 'Error: Please specify the commit message.'
+    exit 0
+fi
+
 MESSAGE=$1
 
 hexo clean
