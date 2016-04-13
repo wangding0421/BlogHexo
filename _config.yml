@@ -72,3 +72,5 @@ deploy:
   type: git
   repo: https://github.com/wangding0421/wangding0421.github.com
   
+#Duoshuo support:
+duoshuo_shortname: wangding0421
