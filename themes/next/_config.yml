@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+#since: 2016
 
 
 
@@ -26,7 +26,7 @@ rss:
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
+  categories: /categories
   #about: /about
   archives: /archives
   tags: /tags
@@ -99,7 +99,7 @@ font:
   logo:
     external: true
     family:
-    size:
+    size: 13
 
   # Font settings for <code> and code blocks.
   code:
@@ -117,9 +117,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  GitHub: https://github.com/wangding0421
+  Facebook: https://www.facebook.com/wangding0421
+  Linkedin: https://www.linkedin.com/in/ding-wang-853922105
 
 # Social Links Icons
 # Icon Mapping:
@@ -131,6 +132,8 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
+  Facebook: facebook
+  Linkedin: linkedin
   Twitter: twitter
   Weibo: weibo
 
@@ -191,11 +194,11 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 
 # Automatically Excerpt. Not recommand.
@@ -231,7 +234,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+#duoshuo_shortname: wangding0421
 
 # Disqus
 #disqus_shortname:
@@ -255,7 +258,7 @@ mathjax:
 
 
 # Google Analytics
-#google_analytics:
+#google_analytics: UA-76463807-1
 
 # CNZZ count
 #cnzz_siteid:
@@ -292,19 +295,19 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer: 
+  site_uv_header: 本站访客数
+  site_uv_footer: 人次
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer: 
+  site_pv_header: 本站总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer: 
+  page_pv_header: 本文总阅读量
+  page_pv_footer: 次
 
 # Tencent analytics ID
 # tencent_analytics:

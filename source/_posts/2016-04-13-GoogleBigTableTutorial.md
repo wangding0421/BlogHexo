@@ -1,6 +1,7 @@
 ---
 title: Google BigTable Tutorial
 date: 2016-04-13 13:20:33
+categories: Programming
 tags:
     - Google
     - BigTable

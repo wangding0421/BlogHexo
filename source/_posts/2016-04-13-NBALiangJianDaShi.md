@@ -1,6 +1,7 @@
 ---
 title: NBA史上的两件大事
 date: 2016-04-13 22:22:40
+categories: 其他
 tags:
     - NBA
     - 科比
