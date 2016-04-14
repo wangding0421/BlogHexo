@@ -74,3 +74,6 @@ deploy:
   
 #Duoshuo support:
 duoshuo_shortname: wangding0421
+
+#Google Analytics
+google_analytics: UA-76463807-1
