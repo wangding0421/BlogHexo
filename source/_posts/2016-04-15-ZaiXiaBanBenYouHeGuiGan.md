@@ -11,6 +11,8 @@ tags:
 
 最近zxy发现的一个动漫，想添加一个新的category又想测试一下有没有可能插入视频（感觉是要失败的）。赶紧试试。
 
+<!--more-->
+
 # 第一集 #
 
 <iframe width="500" height="315" src="http://www.youtube.com/embed/Bpx2CVZnmJo" frameborder="0" allowfullscreen></iframe>
