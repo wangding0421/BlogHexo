@@ -1,7 +1,7 @@
 ---
 title: UbuntuSpacemacs
 date: 2016-04-19 16:31:36
-categories: categories: CCTV10-科教
+categories: CCTV10-科教
 tags:
     - Linux
     - Emacs
