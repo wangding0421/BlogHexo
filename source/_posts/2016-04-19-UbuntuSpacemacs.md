@@ -12,6 +12,8 @@ tags:
 
 但其实Emacs的gnu[官网](https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html) 上面的教程基本上是假设你电脑上该配的环境都配好了，个人感觉Emacs非要build from source的人肯定是有了电脑第一件事就是装Emacs的，可能很多dependency都还没来得及装。网上各种建议这么装那么装的感觉不是很靠谱，我参考了一些觉得[这个网站](http://ubuntuhandbook.org/index.php/2014/10/emacs-24-4-released-install-in-ubuntu-14-04/)的教程最合理，贴到这做个纪录。
 
+<!--more-->
+
 # 安装必要库 #
 
 Emacs需要很多dependencies才可以正常工作，直接用Ubuntu的apt-get装Emacs是可以自动装这些dependencies，我们必须手动装这些，具体方法是下面两行命令：
