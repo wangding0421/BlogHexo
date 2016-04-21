@@ -17,7 +17,9 @@ tags:
 
 # 提高代码运行效率 #
 
-* 把`cache()`放在`repartition()`前面会比放在后面高效很多倍，具体原因是因为`repartition()`操作无法继续lazy execution所以需要调用memory，这样的话提早把RDD存入cache就会节省一次时间。
+## `cache()` vs. `repartition()` ##
+
+把`cache()`放在`repartition()`前面会比放在后面高效很多倍，具体原因是因为`repartition()`操作无法继续lazy execution所以需要调用memory，这样的话提早把RDD存入cache就会节省一次时间。
 
 举例，下面两份代码第一份优于第二份：
 
@@ -63,7 +65,7 @@ print duration_means_by_activity
 这个function的牛逼之处就在于可以把一个Key-Value的pair拆成很多个，举个例子比如一个`(int, list)`的pair，可以拆成很多个，每个的Key保持不变而Value就是list中的每一个。比如：
 
 ```python
-l_group_TokenK = tRDD_user_token.flatMapValues(lambda x: x).filter(lambda x: x[1] in d_geq100Tokens)\
+l_group_TokenK = tRDD_user_token.flatMapValues(lambda x: x)
 ```
 
 
