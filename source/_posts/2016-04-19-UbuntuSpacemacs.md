@@ -56,4 +56,4 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 关于Spacemacs的更多信息可以参照[官网](http://spacemacs.org/)。
 
-Happying Coding!
+Happy Coding!

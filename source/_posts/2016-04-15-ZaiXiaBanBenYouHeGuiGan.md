@@ -13,8 +13,16 @@ tags:
 
 <!--more-->
 
+# 更新日志 #
+
+2016-04-21补充：发现Youtube的版本已经下架了，试一试看看能不能改成Bilibili的版本，另外加上了第二集。
+
 # 第一集 #
 
-<iframe width="500" height="315" src="http://www.youtube.com/embed/Bpx2CVZnmJo" frameborder="0" allowfullscreen></iframe>
+<embed height="315" width="500" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=4305747&amp;page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">
+
+# 第二集 #
+
+<embed height="315" width="500" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=4428210&amp;page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">
 
 更新中...
