@@ -35,6 +35,10 @@ sRDD_text.map(someFunc)\
 .cache()
 ```
 
+## 尽量不要Move Data ##
+
+Spark有一个很重要的原则就是能不对Data做Manupulation就不要做，有些事情比如Regression, K-means就利用了这一点在每个partition分别运算，然后通过`broadcast`命令实现partition之前的同步。
+
 # Key-Value pair操作 #
 
 ## `combineByKey()` ##
@@ -52,14 +56,12 @@ sum_counts = rdd.combineByKey(
 #mergeValue defines how to merge a accumulator with a value (saves on mapping each value to an accumulator first)
     (lambda acc1, acc2: (acc1[0]+acc2[0], acc1[1]+acc2[1])) # combine accumulators
 )
-
 print sum_counts.collect()
 duration_means_by_activity = sum_counts.mapValues(lambda value:
                                                   value[0]*1.0/value[1]) \
-                                            .collect()
+                                                  .collect()
 print duration_means_by_activity
 ```
-
 ## `flatMapValues()` ##
 
 这个function的牛逼之处就在于可以把一个Key-Value的pair拆成很多个，举个例子比如一个`(int, list)`的pair，可以拆成很多个，每个的Key保持不变而Value就是list中的每一个。比如：
@@ -67,6 +69,3 @@ print duration_means_by_activity
 ```python
 l_group_TokenK = tRDD_user_token.flatMapValues(lambda x: x)
 ```
-
-
-
